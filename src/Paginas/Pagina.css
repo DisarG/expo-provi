@@ -1,0 +1,328 @@
+* {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+
+}
+
+body {
+    background: #F9F9F9;
+}
+
+/*encabezado*/
+header {
+    margin: 0px;
+    height: 10%;
+}
+
+/*div del encabezado*/
+#SpaceBetween {
+    height: 100%;
+    background: #009688;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+/*Logo de encabezado*/
+#Logoplay {
+    width: 37px;
+    height: 33px;
+    margin-left: 75px;
+    margin-top: 27px;
+
+}
+
+/*Titulo de encabezado*/
+#Tituloplay {
+    margin-top: 20px;
+    Width: 183px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 40px;
+    color: white;
+}
+
+button {
+    position: relative;
+    Width: 578px;
+    Height: 58px;
+    margin-left: 171px;
+    background: #F50057;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background: rgba(47, 85, 253, 0.5);
+    opacity: 0;
+    border-radius: 50%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 1;
+    }
+
+    20% {
+        transform: scale(15, 15);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(40, 40);
+    }
+}
+
+button:focus:not(:active)::after {
+    animation: ripple 1s ease-out;
+}
+
+button:hover {
+    border: 1px solid rgba(25, 118, 210, 1);
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+/*Aca empieza la pagina de playlist*/
+
+
+#TuPlayList {
+
+    margin-left: 2.5%;
+    padding-top: 2.5%;
+    margin-top: 2.5%;
+    Width: 95%;
+    Height: 84%;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+}
+
+/*Titulo curiculum*/
+#h2 {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    color: #009688;
+    width: 394px;
+    height: 10%;
+    margin-left: 5%;
+    padding-left: 0px;
+
+}
+
+#Menu {
+    width: 1215px;
+    margin-left: 5%;
+    display: flex;
+    flex-flow: row;
+    height: 5%;
+
+}
+
+#categorias {
+    font-size: 20px;
+    height: 100%;
+    width: 600px;
+}
+
+#ListaDeCanciones {
+    height: 80%;
+    width: 90%;
+    margin-left: 5%;
+}
+
+ul {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+li {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+
+    letter-spacing: 0.00938em;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+
+
+}
+
+.ul {
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
+
+}
+
+#ContenedorInfo2 {
+    width: 2000px;
+    height: 100px;
+    display: flex;
+    flex-flow: row;
+    border: 1px black solid;
+
+
+
+}
+
+#ContenedorInfo {
+    display: flex;
+    flex-flow: row;
+
+
+}
+
+#contenedorDeBotones {
+    width: 60px;
+    height: 25px;
+}
+
+.DatosDeLaCancion {
+    width: 190px;
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+.Votar {
+    height: 25px;
+    width: 25px;
+    border: none;
+    background: white;
+    box-shadow: none;
+    margin: 0px;
+}
+
+#medidas {
+    height: 100%;
+    width: 100%;
+    margin-top: 0px;
+
+
+}
+
+#chica1 {
+    height: 21px;
+    width: 21px;
+    margin-top: 0px;
+    margin-left: -4px;
+    transform: rotate(90deg);
+
+}
+
+#chica2 {
+    height: 21px;
+    width: 21px;
+    margin-top: 0px;
+    margin-left: -4px;
+    transform: rotate(270deg);
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration-line: underline;
+
+}
+
+
+/*Aca empieza Login Mobile*/
+
+@media only screen and (max-width: 1275px) {
+    * {
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        background: white;
+    }
+
+    header {
+        height: 10%;
+        width: 100%;
+    }
+
+    #SpaceBetween {
+        height: 100%;
+        background: #009688;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+
+    #Logoplay {
+        margin-left: 25px;
+        margin-top: 20px;
+        background-color: #009688;
+    }
+
+    #Tituloplay {
+        width: 116px;
+        height: 39px;
+        padding-left: 11px;
+        padding-top: 21px;
+        margin: 0px;
+        background-color: #009688;
+    }
+
+    main {
+        height: 90%;
+        width: 100%;
+    }
+
+    #h2 {
+        width: 100%;
+        height: 10%;
+    }
+
+    #Menu {
+        height: 5%;
+        width: 50%;
+
+    }
+
+    #ListaDeCanciones {
+        width: 95%;
+    }
+
+    li {
+        width: 100%;
+    }
+
+
+}
